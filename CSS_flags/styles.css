@@ -1,0 +1,142 @@
+body{
+    background-color: lightgray;
+}
+.original{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-color: red;
+}
+.plava{
+    width: 500px;
+    height: 140px;
+    background-color: darkblue;
+    position: absolute;
+    top: 80px;
+}
+.krug{
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 190px;
+    top: 15px;
+}
+.plavaisland{
+    width: 500px;
+    height: 300px;
+    background-color: darkblue;
+    position: relative;
+}
+.bijelaisland1{
+    width: 500px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+}
+.bijelaisland2{
+    width: 80px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    left: 120px;
+}
+.crvenaisland1{
+    width: 500px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 130px;
+}
+.crvenaisland2{
+    width: 40px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    left: 140px;
+}
+.mainbahama{
+    width: 500px;
+    height: 300px;
+    background-color: teal;
+    position: relative;
+}
+.zutabahama{
+    width: 500px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+}
+.trokutbahama{
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-left: 200px solid black;
+    border-bottom: 150px solid transparent;
+    position: absolute;
+    z-index: 1;
+}
+.mainbahrain{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+.bijelabahrain{
+    width: 100px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+}
+.trokutbahrein1{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: 100px;
+}
+.trokutbahrein2{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+}
+.trokutbahrein3{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+.trokutbahrein4{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+}
+.trokutbahrein5{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: 100px;
+    top: 240px;
+}
