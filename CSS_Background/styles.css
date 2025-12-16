@@ -1,0 +1,77 @@
+html{
+    background-image: linear-gradient(to bottom, #F5EBFA, #49225B);
+    height: 100%;
+}
+
+.main{
+    width: 500px;
+    height: 800px;
+    margin-left: 650px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.prvi{
+    width: 300px;
+    height: 120px;
+    background-color: #49225B;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 210px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+.drugi{
+    width: 300px;
+    height: 120px;
+    background-color: #6E4382;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 280px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+.treci{
+    width: 300px;
+    height: 120px;
+    background-color: #A56ABD;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 350px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+.cetvrti{
+    width: 300px;
+    height: 120px;
+    background-color: #E7DBEF;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 420px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+.peti{
+    width: 300px;
+    height: 120px;
+    background-color: #F5EBFA;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 490px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 750;
+}
+
+.p1{color: #F5EBFA;}
+.p2{color: #E7DBEF;}
+.p3{color: #E7DBEF;}
+.p4{color: #6E4382;}
+.p5{color: #49225B;}
