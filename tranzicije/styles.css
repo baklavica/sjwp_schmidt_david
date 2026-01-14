@@ -2,49 +2,53 @@ body {
     background-color: black;
 }
 
-.prvi {
+.glavni {
+    position: absolute;
     width: 300px;
     height: 300px;
+    margin-left: 800px;
+    margin-top: 350px;
+}
+
+.prvi { 
+    width: 300px;
+    height: 300px;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: absolute;
     background-color: salmon;
     transform: rotate(130deg) skew(10deg, 20deg);
-    margin-left: 800px;
-    margin-top: 400px;
     border-radius: 10px;
-    position: absolute;
-    z-index: 1;
+    transition: 0.25s 0.05s ease-in-out;
 }
 
 .drugi {
     width: 300px;
     height: 300px;
+    margin-left: 5x;
+    margin-top: 5px;
+    position: absolute;
     background-color: rgb(176, 46, 46);
     transform: rotate(130deg) skew(10deg, 20deg);
-    margin-left: 800px;
-    margin-top: 400px;
-    border-radius: 15px;
-    position: absolute;
+    border-radius: 10px;
+    transition: 0.25s 0.025s ease-in-out;
 }
 
 .treci {
     width: 300px;
     height: 300px;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: absolute;
     background-color: darkred;
     transform: rotate(130deg) skew(10deg, 20deg);
-    margin-left: 800px;
-    margin-top: 400px;
     border-radius: 10px;
-    position: absolute;
 }
 
-.prvi:hover{
-    transition: margin-top 1s ease-in-out;
-    margin-top: 200px;
+.glavni:hover .prvi {
+    transform: translateY(-100px) rotate(130deg) skew(10deg, 20deg);
 }
-.drugi:hover{
-    transition: margin-top 0.4s ease-in-out;
-    margin-top: 250px;
-}
-.treci:hover{
-    transition: margin-top 0.6s ease-in-out;
-    margin-top: 300px;
+
+.glavni:hover .drugi {
+    transform: translateY(-50px) rotate(130deg) skew(10deg, 20deg);
 }
