@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kruznica{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-left: 10px;
+            border: 3px solid lightgray;
+            background-color: transparent;
+            position: absolute;
+        }
+        .kruznica2{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 10px solid lightgray;
+            background-color: transparent;
+            animation: animkruznica 2s infinite 0s linear;
+            position: absolute;
+        }
+        .glavnikrug{
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            position: absolute;
+            border-radius: 50%;
+            margin-left: 145px;
+            margin-top: 135px;
+        }
+        @keyframes animkruznica{
+            0%{
+                transform: scale(0);
+                opacity: 100%;
+            }
+            25%{
+                transform: scale(25%);
+                opacity: 50%;
+            }
+            50%{
+                transform: scale(50%);
+                opacity: 25%;
+            }
+            75%{
+                transform: scale(75%);
+                opacity: 0%;
+            }
+            100%{
+                transform: scale(100%);
+                opacity: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glavnikrug"></div>
+    <div class="krug1"></div>
+    <div class="krug2"></div>
+    <div class="krug3"></div>
+    <div class="krug4"></div>
+    <div class="krug5"></div>
+    <div class="kruznica"></div>
+    <div class="kruznica2"></div>
+</body>
+</html>
