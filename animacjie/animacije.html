@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacije</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 55px;
+            margin-left: 100px;
+            margin-top: 100px;
+            /* animation-duration: 2s;
+            animation-name: spin;
+            animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+            animation-delay: 0s;
+            animation-iteration-count: infinite; 
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+            animation-play-state: paused; */
+            animation: 2s spin ease-in-out infinite alternate backwards paused;
+        }
+
+        .box:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes spin {
+            0% {
+                
+            }
+            50%{
+                scale: 2;
+                transform: rotate(0);
+                border-radius: 50%;
+            }
+            100% {
+                transform: rotate(360deg);
+                scale: 2;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animacije</h1>
+    <div class="box">3.E</div>
+</body>
+</html>

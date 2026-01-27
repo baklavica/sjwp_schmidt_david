@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 7</title>
+    <style>
+        .tekst {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            margin-left: 45%;
+            margin-top: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: pojavljivanje 2s ease-in forwards;
+        }
+        @keyframes pojavljivanje {
+            0% { opacity: 0; }
+            100% { opacity: 1; transform: translateY(-400px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="tekst"><p>MANGO</p></div>
+</body>
+</html>
