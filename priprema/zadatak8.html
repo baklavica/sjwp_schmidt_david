@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 8</title>
+    <style>
+        .wrapper {
+            width: 300px;
+            height: 600px;
+            background-color: lightgray;
+            margin-top: 10%;
+            margin-left: 40%;
+            border-radius: 20px;
+            position: relative;
+        }
+        .krug1, .krug2, .krug3 {
+            width: 150px;
+            height: 150px;
+            left: 75px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .krug1 {
+            background-color: darkgray;
+            top: 50px;
+            animation: krug1 0.25s 1s ease-in forwards;
+        }
+        .krug2 {
+            background-color: darkgray;
+            top: 225px;
+            animation: krug2 0.25s 2s ease-in forwards;
+        }
+        .krug3 {
+            background-color: darkgray;
+            top: 400px;
+            animation: krug3 0.25s 3s ease-in forwards;
+        }
+        @keyframes krug1 {
+            0% { background-color: black;}
+            100% { background-color: red; box-shadow: 0 0 15px red; }
+        }
+        @keyframes krug2 {
+            0% { background-color: black; }
+            100% { background-color: yellow; box-shadow: 0 0 15px yellow; }
+        }
+        @keyframes krug3 {
+            0% { background-color: black; }
+            100% { background-color: green; box-shadow: 0 0 15px green; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="krug1"></div>
+        <div class="krug2"></div>
+        <div class="krug3"></div>
+    </div>
+</body>
+</html>
