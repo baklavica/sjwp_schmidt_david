@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: #ccc;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        .container div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div1{
+            background-color: skyblue;
+            width: 100vw;
+            height: 125px;
+        }
+        .div3{
+            background-color: violet;
+            width: 300px;
+            height: 700px;
+        }
+        .div4{
+            background-color: lightsalmon;
+            width: calc(100vw - 600px);
+            height: 700px;
+        }
+        .div5{
+            background-color: violet;
+            width: 300px;
+            height: 700px;
+        }
+        .div2{
+            background-color: skyblue;
+            width: 100vw;
+            height: 125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1"><p>HEADER</p></div>
+        <div class="div3"><p>MENU</p></div>
+        <div class="div4"><p>CONTENT</p></div>
+        <div class="div5"><p>AD AD</p></div>
+        <div class="div2"><p>FOOTER</p></div>
+    </div>
+</body>
+</html>
