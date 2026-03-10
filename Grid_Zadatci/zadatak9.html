@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        .container div { background-color: #373737; color: white; padding: 40px;}
+        .container .f {background-color: blue; opacity: 0.5;}
+        .a { grid-column: span 2;}
+        .b { grid-column: span 3;}
+        .d { grid-area: 2 / 2 / 3 / 5;}
+        .f { grid-area: 2 / 3 / 3 / 6;}
+        .e { grid-column: span 5;} 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>   
+        <div class="f">f</div>
+    </div>
+</body>
+</html>

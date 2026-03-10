@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px;
+            gap: 10px;
+        }
+        .container div {
+            background-color: darkgray;
+        }
+        .a { order: 2;}
+        .b { order: 5;}
+        .c {order: 6;}
+        .d { order: 1;}
+        .e { order: 4;}
+        .f { order: 3;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+        <div class="f">f</div>
+    </div>
+</body>
+</html>

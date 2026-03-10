@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 50px 75px 50px 50px;
+            gap: 10px;
+        }
+        .container div { padding: 5px;}
+        .header {
+            background-color: #a9a9a9;
+            grid-column: span 4;
+        }
+        .sidebar { 
+            background-color: black;
+            color: white;
+        }
+        .content {
+            background-color: black;
+            color: white;
+            grid-column: span 3;
+        }
+        .sidebar2 {
+            background-color: lightgray;
+            grid-column: span 4;
+        }
+        .footer {
+            background-color: #a9a9a9;
+            grid-column: span 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><p>Header</p></div>
+        <div class="sidebar"><p>Sidebar</p></div>
+        <div class="content"><p>Content More content than we had before so this column now is quite tall.</p></div>
+        <div class="sidebar2"><p>Sidebar 2</p></div>
+        <div class="footer"><p>Footer</p></div>
+    </div>
+</body>
+</html>
