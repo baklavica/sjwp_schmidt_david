@@ -15,7 +15,7 @@ body{
 
 .navigation {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     background-color: #013a63;
     justify-content: center;
     justify-items: center;
@@ -23,35 +23,66 @@ body{
     align-items: center;
     color: #fff;
 }
+
+.navigation a {
+    box-shadow: #012a4a 8px 8px;
+}
+
+.navigation .Films:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.15);
+}
+
+.navigation .TVSeries:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.15);
+}
+
+.navigation .VideoGames:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.15);
+}
+
+
+
 .navigation .Home{
     grid-area: 1 / 1 / 2 / 2;
     background-color: #2A6F97;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: #012a4a 5px 5px;
 }
 .navigation .Films{
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 6 / 2 / 7;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
 }
 .navigation .VideoGames{
-    grid-area: 1 / 4 / 2 / 5;
+    grid-area: 1 / 7 / 2 / 8;
     border: 2px solid #61A5C2;
+    background-color: #014F86;
     border-radius: 20px;
     padding: 10px;
-    color: #61A5C2;
 }
 .navigation .TVSeries{
-    grid-area: 1 / 5 / 2 / 6;
+    grid-area: 1 / 8 / 2 / 9;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
 }
+
+
+.content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .content {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(4, 350px);
     gap: 10px;
     background-color: #01497C;
     justify-content: center;
@@ -61,15 +92,48 @@ body{
 
 .content div {
     background-color: #014F86;
-    border: 2px dotted #2A6F97;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
+    border: 2px solid #61A5C2;
+    border-radius: 10px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.content div {
+    position: relative;
+    overflow: hidden;
+}
+
+.content div img {
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.content div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -80%);
+    
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.content div:hover img {
+    filter: brightness(30%);
+}
+
+.content div:hover p {
+    opacity: 1;
+}
+.content div a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
