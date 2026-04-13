@@ -10,7 +10,6 @@ body{
     grid-template-rows: 100px 1fr;
     height: 100vh;
     background-color: #012a4a;
-    
 }
 
 .navigation {
@@ -26,23 +25,15 @@ body{
 
 .navigation a {
     box-shadow: #012a4a 8px 8px;
+    margin: 5px;
 }
 
-.navigation .Films:hover {
-    transition: all 0.1s ease-in-out;
-    transform: scale(1.15);
-}
-
-.navigation .TVSeries:hover {
-    transition: all 0.1s ease-in-out;
-    transform: scale(1.15);
-}
-
+.navigation .Films:hover,
+.navigation .TVSeries:hover,
 .navigation .VideoGames:hover {
     transition: all 0.1s ease-in-out;
     transform: scale(1.15);
 }
-
 
 .navigation .Home{
     grid-area: 1 / 1 / 2 / 2;
@@ -50,6 +41,7 @@ body{
     padding: 20px;
     box-shadow: #012a4a 5px 5px;
 }
+
 .navigation .Films{
     grid-area: 1 / 6 / 2 / 7;
     background-color: #014F86;
@@ -57,24 +49,19 @@ body{
     border-radius: 20px;
     padding: 10px;
 }
+
 .navigation .VideoGames{
     grid-area: 1 / 7 / 2 / 8;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
 }
+
 .navigation .TVSeries{
     grid-area: 1 / 8 / 2 / 9;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
-}
-
-
-.content div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .content {
@@ -93,19 +80,14 @@ body{
     background-color: #014F86;
     border: 2px solid #61A5C2;
     border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.content div {
     position: relative;
     overflow: hidden;
 }
 
 .content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 0.3s ease;
 }
 
@@ -115,14 +97,13 @@ a {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -80%);
-    
     color: white;
     font-size: 28px;
     font-weight: bold;
-
     opacity: 0;
     transition: 0.3s ease;
 }
+
 .content div:hover img {
     filter: brightness(30%);
 }
@@ -130,8 +111,27 @@ a {
 .content div:hover p {
     opacity: 1;
 }
+
 .content div a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media (max-width: 768px){
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: auto;
+        grid-auto-rows: auto; /* KLJUČNO */
+    }
+
+    .content div {
+        aspect-ratio: 2 / 3; /* kao poster */
+    }
 }

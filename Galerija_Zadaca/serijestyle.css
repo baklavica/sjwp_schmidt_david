@@ -26,6 +26,7 @@ body{
 
 .navigation a {
     box-shadow: #012a4a 8px 8px;
+    margin: 5px;
 }
 
 .navigation .Films:hover {
@@ -135,4 +136,16 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px){
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: auto;
+        grid-auto-rows: auto; /* KLJUČNO */
+    }
+
+    .content div {
+        aspect-ratio: 2 / 3; /* kao poster */
+    }
 }
