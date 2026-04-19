@@ -1,16 +1,18 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* spriječi horizontalni scroll na cijeloj stranici */
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #012a4a;
-    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navigation {
@@ -22,6 +24,8 @@ body{
     align-content: center;
     align-items: center;
     color: #fff;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navigation a {
@@ -29,53 +33,40 @@ body{
     margin: 5px;
 }
 
-.navigation .Films:hover {
-    transition: all 0.1s ease-in-out;
-    transform: scale(1.15);
-}
-
-.navigation .TVSeries:hover {
-    transition: all 0.1s ease-in-out;
-    transform: scale(1.15);
-}
-
+.navigation .Films:hover,
+.navigation .TVSeries:hover,
 .navigation .VideoGames:hover {
     transition: all 0.1s ease-in-out;
     transform: scale(1.15);
 }
 
-
-.navigation .Home{
+.navigation .Home {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #2A6F97;
     padding: 20px;
     box-shadow: #012a4a 5px 5px;
 }
-.navigation .Films{
+
+.navigation .Films {
     grid-area: 1 / 6 / 2 / 7;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
 }
-.navigation .VideoGames{
+
+.navigation .VideoGames {
     grid-area: 1 / 7 / 2 / 8;
     border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
 }
-.navigation .TVSeries{
+
+.navigation .TVSeries {
     grid-area: 1 / 8 / 2 / 9;
-    border: 2px solid #61A5C2;
     background-color: #014F86;
+    border: 2px solid #61A5C2;
     border-radius: 20px;
     padding: 10px;
-}
-
-
-.content div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .content {
@@ -88,25 +79,20 @@ body{
     justify-content: center;
     align-content: center;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .content div {
     background-color: #014F86;
     border: 2px solid #61A5C2;
     border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.content div {
     position: relative;
     overflow: hidden;
 }
 
 .content div img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: 0.3s ease;
 }
@@ -117,14 +103,13 @@ a {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -80%);
-    
     color: white;
     font-size: 28px;
     font-weight: bold;
-
     opacity: 0;
     transition: 0.3s ease;
 }
+
 .content div:hover img {
     filter: brightness(30%);
 }
@@ -132,20 +117,54 @@ a {
 .content div:hover p {
     opacity: 1;
 }
+
 .content div a {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-@media (max-width: 768px){
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: auto 1fr;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(4, 1fr); /* presloži nav u 2 reda */
+        grid-template-rows: repeat(2, auto);
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .navigation .Home {
+        grid-area: auto;
+        padding: 10px;
+    }
+
+    .navigation .Films,
+    .navigation .VideoGames,
+    .navigation .TVSeries {
+        grid-area: auto;
+        padding: 8px;
+        font-size: 13px;
+    }
+
     .content {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-template-rows: auto;
-        grid-auto-rows: auto; /* KLJUČNO */
+        grid-template-columns: repeat(2, 1fr); /* točno 2 stupca, fluid */
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        gap: 8px;
+        padding: 8px;
+        height: auto;
+        align-content: start;
     }
 
     .content div {
-        aspect-ratio: 2 / 3; /* kao poster */
+        aspect-ratio: 2 / 3;
     }
 }
