@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -128,10 +129,10 @@ a {
     .content {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-template-rows: auto;
-        grid-auto-rows: auto; /* KLJUČNO */
+        grid-auto-rows: auto;
     }
 
     .content div {
-        aspect-ratio: 2 / 3; /* kao poster */
+        aspect-ratio: 2 / 3;
     }
 }
