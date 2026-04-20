@@ -168,3 +168,35 @@ a {
         aspect-ratio: 2 / 3;
     }
 }
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        gap: 10px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .content div {
+        aspect-ratio: 2 / 3;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: none;
+        grid-auto-rows: auto;
+        gap: 10px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .content div {
+        aspect-ratio: 2 / 3;
+    }
+}
