@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 100%;
+            gap: 10px;
+        }
+        .container div {
+            background-color: #ccc;
+            height: 49.4vh;
+            width: 100%;
+        }
+        .kartica1 { grid-area: 1 / 1 / 2 / 4; }
+
+        @media (max-width: 767px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
+            .container div {
+                height: 15.75vh;
+                width: 100%;
+            }
+            .kartica1 { grid-area: auto; height: 20vh; width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kartica1"><h1>kartica 1</h1><p>Ovo je istaknuta kartica koja zauzima 2 stupca na desktopu.</p></div>
+        <div class="kartica2"><h1>kartica 2</h1></div>
+        <div class="kartica3"><h1>kartica 3</h1></div>
+        <div class="kartica4"><h1>kartica 4</h1></div>
+        <div class="kartica5"><h1>kartica 5</h1></div>
+        <div class="kartica6"><h1>kartica 6</h1></div>
+    </div>
+</body>
+</html>

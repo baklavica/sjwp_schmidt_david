@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            height: 100%;
+            gap: 5px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .header {
+            background-color: plum;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .sidebar {
+            background-color: lightgreen;
+            width: 29%;
+            height: 60vh;
+        }
+
+        .maincontent {
+            background-color: khaki;
+            width: 69%;
+            height: 60vh;
+            margin-left: 38px;
+        }
+
+        .footer {
+            background-color: aquamarine;
+            width: 100%;
+            height: 20vh;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+                height: 100%;
+                gap: 5px;
+            }
+            .sidebar {
+                width: 100%;
+                height: 20vh;
+            }
+            .maincontent {
+                width: 100%;
+                height: 40vh;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>HEADER</h1></div>
+        <div class="content">
+            <div class="sidebar"><h1>SIDEBAR</h1><p>Početna<br>Usluge<br>O nama<br>Kontakt</p></div>
+            <div class="maincontent"><h1>MAIN CONTENT</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eveniet exercitationem dolorem cumque maxime quod quam, sunt aperiam mollitia cupiditate debitis tenetur odit eligendi reiciendis assumenda deleniti dolore perspiciatis enim.</p></div>
+        </div>
+        <div class="footer"><h1>FOOTER</h1></div>
+    </div>
+</body>
+</html>
