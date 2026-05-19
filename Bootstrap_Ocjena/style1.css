@@ -1,0 +1,17 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(150deg, #cce0f5 0%, #eef5fc 50%, #d6eaf8 100%);
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+a {
+    color: #0a58ca;
+    text-decoration: none;
+}
+
+.container.text-center {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 50px;
+}

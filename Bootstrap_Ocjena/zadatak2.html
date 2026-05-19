@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="forma-card">
+                <h4 class="forma-naslov">Kontaktirajte Nas</h4>
+                <form method="GET" action="#">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="ime" class="form-label forma-label">Ime</label>
+                            <input type="text" class="form-control" id="ime" name="ime" placeholder="Vaše ime">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label forma-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="vaš@email.com">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="poruka" class="form-label forma-label">Poruka</label>
+                        <textarea class="form-control" id="poruka" name="poruka" rows="4"
+                            placeholder="Napišite vašu poruku..."></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label for="datum" class="form-label forma-label">Datum</label>
+                        <input type="date" class="form-control" id="datum" name="datum">
+                    </div>
+                    <button type="submit" class="btn btn-posalji">Pošalji Poruku</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

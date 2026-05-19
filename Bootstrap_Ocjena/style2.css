@@ -1,0 +1,29 @@
+.forma-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.forma-naslov {
+    color: #042C53;
+    border-bottom: 2px solid darkblue   ;
+    margin-bottom: 40px;
+}
+
+.forma-label {
+    color: #185FA5;
+}
+
+.btn-posalji {
+    background-color: #0a58ca;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+.btn-posalji:hover {
+    background-color: #042C53;
+    color: #fff;
+}
