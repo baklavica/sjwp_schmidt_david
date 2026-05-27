@@ -1,6 +1,5 @@
 body {
     min-height: 100vh;
-    background: linear-gradient(150deg, #cce0f5 0%, #eef5fc 50%, #d6eaf8 100%);
     font-family: Arial, sans-serif;
     color: black;
 }
@@ -14,4 +13,11 @@ a {
     background-color: #f8f9fa;
     padding: 20px;
     margin-top: 50px;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
